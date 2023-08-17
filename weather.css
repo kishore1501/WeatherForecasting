@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+html{
+    height: 100%;
+}
+h1{
+    text-align: center;
+}
+body{
+    background: whitesmoke;
+    padding: 1rem 5rem;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    background: url('../images/fog-dark-clouds-mountains.jpg');
+    
+    background-position: center;
+    background-size:cover;
+    background-color: green;
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1{
+    color: whitesmoke;
+    text-decoration: underline;
+    font-family: 'Orbitron', sans-serif;
+}
+#input{
+    font-size: 18px;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background: rgb(193, 217, 238);
+}
+#search{
+    background: none;
+    padding: 5px 20px;
+    color: aliceblue;
+    outline: none;
+    background: cadetblue;
+    font-size: 17px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+}
+.weather{
+    text-align: center;
+    color: aliceblue;
+}
+#city{
+    font-size: 30px;
+}
+.weather img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: rgba(240, 248, 255, 0.408);
+}
+#temperature{
+    font-size: 50px;
+    margin: 0;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.temp-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+#clouds{
+    font-size: 20px;
+    background: rgba(153, 205, 50, 0.778);
+    padding: 2px 20px;
+    border-radius: 15px;
+}
+main{
+    display: grid;
+    grid-column-gap: 25px;
+    grid-template-columns: 1fr 5px 1fr;
+    align-items: center;
+    margin: 0 50px;
+    color: white;
+}
+.next{
+    border: 1px solid white;
+    border-radius: 5px;
+    background:rgb(20, 31, 33, 0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    padding-right: 5px;
+}
+.next p,.next h3{
+    margin: 3px 0;
+}
+.forecstD{
+    margin: 20px 50px;
+    color: aliceblue;
+}
+.weekF{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.cast-header{
+    
+    background: rgba(199, 85, 44, 0.539);
+    width: max-content;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.divider1,.divider2{
+    background: rgba(254, 189, 132, 0.539);
+    height: 200px;
+    border-radius: 5px;
+}
+.divider2{
+    height: 5px;
+    width: 30%;
+    margin: 0 auto;
+}
+.time,.date{
+    color: rgb(254, 189, 132);
+}
+
+
+.container{
+    padding: auto ;
+}
+
+.current-info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.date-container{
+    font-weight: 50;
+}
+.date-container .time{
+    font-size: 40px;
+}
+
+.date-container #am-pm{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.date-container .date{
+    font-size: 20px;
+}
+
+.dayF{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background: rgb(20, 31, 33, 0.539);
+    padding: 5px 15px;
+    border-radius: 50px;
+    text-align: center;
+    margin: 5px;
+}
+
+.current-info .others{
+    display: flex;
+    flex-direction: column;
+    background: rgba(24,24,27, 0.6);
+    padding:20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid #eee;
+}
+
+.current-info .others .weather-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and  (max-width:730px){
+    .current-info .others{
+        padding: 12px;
+    }
+
+    .current-info .others .weather-item{
+        font-size: 14px;
+    }
+
+}
